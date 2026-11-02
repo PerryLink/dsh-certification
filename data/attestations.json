@@ -1,0 +1,40 @@
+{
+  "schema": "dsh-attestation-registry/1",
+  "specVersion": "v1",
+  "generatedAt": "2026-11-01",
+  "entries": [
+    {
+      "repo": "PerryLink/dsh-auto-review",
+      "grade": "A",
+      "specVersion": "v1",
+      "snapshot": "2026-11-01",
+      "dimensions": {
+        "manifest": {
+          "result": "pass",
+          "evidence": "dsh.bundle manifest + Apache-2.0 + five-language READMEs + engines ^22.19.0 || >=24.0.0 (repo + npm registry scan 2026-11-01, v0.15.0)"
+        },
+        "buildHygiene": {
+          "result": "pass",
+          "evidence": "files allowlist + peerDependencies covering 0.2.x bands + typecheck/test/build/check:readmes/prepublishOnly gates present; npm pack shape checked; no postinstall (prepare only, not run for the npm tarball); no malicious install-time pattern observed 2026-11-01"
+        },
+        "supplyChain": {
+          "result": "pass",
+          "score": 4.1,
+          "evidence": "https://api.securityscorecards.dev/projects/github.com/PerryLink/dsh-auto-review score 4.1, run 2026-10-31T10:27:06Z on commit 81b3655f25b75ca4eb2890cb5ff3f80c571a8ef5 (scorecard v5.6.0)"
+        },
+        "releaseIntegrity": {
+          "result": "pass",
+          "evidence": "dsh-auto-review@0.15.0 registry attestations carry publish/v0.1 and slsa.dev/provenance/v1; verified directly 2026-11-01; dist.integrity sha512-j6lokDt0QLP1BN7xYVEbEK/4OLPFXQaDsV9VC0v/mCIVUaeJs7g+934fjYttzcTGK3z8ouDTjtIOTgkthGFESg=="
+        },
+        "installSmoke": {
+          "result": "ok",
+          "evidence": "2026-11-01 isolated DSH_HOME, dsh 0.2.2-alpha.2, profile initialized from the shipped headless template, `dsh plugin --profile cert add --ignore-scripts dsh-auto-review@0.15.0` exit 0; `--dump-config` shows row `auto-review` / name `dsh-auto-review`; keyless headless boot reaches MISSING_CREDENTIAL (tree-load proof); no ERR_PNPM_IGNORED_BUILDS"
+        }
+      },
+      "veto": null,
+      "notes": "Re-audited at 0.15.0 on 2026-11-01; grade A retained. Supply-chain score moved 5.4 -> 4.1 (Scorecard v5.6.0 run 2026-10-31). Install smoke uses --ignore-scripts; the package ships prebuilt lib/ and declares no postinstall. Self-assessed: the certifier and the plugin author are the same maintainer; this entry is not independent third-party certification. Add an independent assessor before citing it as external validation.",
+      "selfAssessed": true,
+      "assessor": "PerryLink (maintainer; same party as the plugin author)"
+    }
+  ]
+}

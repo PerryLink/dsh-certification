@@ -1,0 +1,39 @@
+name: Registry refresh
+
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  badges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Fail the refresh before it renders anything if the evidence went stale.
+      # (Sibling repositories are not checked out here, so the mirror and marker
+      # assertions report SKIP in this job; freshness.yml runs them for real.)
+      - name: Freshness gate
+        run: node scripts/check-freshness.mjs
+
+      - name: Render badges for every entry
+        run: |
+          node -e "const r=require('./data/attestations.json');for(const e of r.entries){require('child_process').execSync('node scripts/badge.mjs '+e.repo,{stdio:'inherit'})}"
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          if [ -n "$(git status --porcelain)" ]; then
+            git add badges data/attestations.json
+            git commit -m 'chore: refresh certification badges'
+            git push
+          fi
