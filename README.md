@@ -89,7 +89,7 @@ The full crosswalk — what each dimension proves, which gate it can feed, and w
 4. Pilot with other top plugin authors
 5. Propose badge display to the canonical list and marketplaces (link-only, no endorsement)
 
-**DSH family line:** this repository belongs to the **PerryLink DeepSeek Harness plugin family**, whose current line is `dsh-v0.1.7-rc.2`.
+**DSH family line:** this repository belongs to the **PerryLink DeepSeek Harness plugin family**, whose current line is `dsh-v0.2.2-alpha.3`.
 
 ## PerryLink DSH Plugin Family
 
