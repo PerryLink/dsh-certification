@@ -52,7 +52,7 @@ What is still missing, gate by gate:
 |---|---|---|---|
 | **G0** | `dsh.bundle.patch` parses | A confirms a `dsh.bundle` manifest is declared | The patch document is never parsed here |
 | **G1** | base + sample compose; inserted row names resolve | B checks the `files` allowlist (tarball completeness is an input) | No composition, no row-name resolution |
-| **G2** | `evaluatePluginCompatibility` admits, or an explicit exact-version exemption applies | A/B supply the declared `engines`/peer ranges; E records an install the recorded host accepted | No gate evaluation and no exemption record; the recorded host version may differ from the current anchor |
+| **G2** | `evaluatePluginCompatibility` admits, or an explicit exact-version exemption applies. Current anchor: DSH `0.2.2-alpha.3`, Node `>=24.9.0`; an own `engines.dsh` range decides alone since 0.2.1-alpha.4 | A/B supply the declared `engines`/peer ranges; E records an install the recorded host accepted | No gate evaluation and no exemption record; the recorded host version may differ from the current anchor |
 | **G3** | real `boot()`; every target row `ACTIVE` or `disabled` | E records a keyless boot reaching `MISSING_CREDENTIAL` (tree-load proof) | Per-row state is never asserted; a tree that loads is not a row that is ACTIVE |
 | **G4** | when `dsh.client` exists: `exports["./client"]` and a package-root row | nothing | No dimension checks `dsh.client`, the export or the root row |
 | **G5** | report carries runtime version/commit/artifact mtime; stale evidence is marked `stale` | a snapshot date and prose evidence, plus a separate 30-day registry gate | No structured runtime/commit anchor, no artifact mtime, no per-plugin `stale` state |
