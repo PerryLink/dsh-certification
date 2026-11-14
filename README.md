@@ -205,3 +205,8 @@ This project is one of the **88 actively maintained** DeepSeek Harness entries f
 ## License
 
 MIT. See [LICENSE](./LICENSE).
+
+
+## HCB data
+
+[HCB](https://github.com/PerryLink/dsh-compat-baseline) is the canonical source for declared compatibility / tracks / risk. The registry can link HCB rows; **certification A–D and HCB gate are orthogonal**.
