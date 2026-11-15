@@ -209,4 +209,4 @@ MIT. See [LICENSE](./LICENSE).
 
 ## HCB data
 
-[HCB](https://github.com/PerryLink/dsh-hcb) 0.10.2 — **143 checked / 3 FLOW `manual`** — checker **143/143 rows on `dsh-standards@1.7.0`** — is the canonical source for declared compatibility / tracks / risk. The registry can link HCB rows; **certification A–D and HCB gate are orthogonal**.
+[HCB](https://github.com/PerryLink/dsh-hcb) 0.11.0 — **142 checked + 1 tested / 3 FLOW `manual` / 1 `production-candidate`** — checker **143/143 rows on `dsh-standards@1.7.0`** — is the canonical source for declared compatibility / tracks / risk. Only `dsh-plugin-guide@0.5.9` is tested / production-candidate; the other 142 rows are not, so this does not make the roster production-ready. The registry can link HCB rows; **certification A–D and HCB gate are orthogonal**.
