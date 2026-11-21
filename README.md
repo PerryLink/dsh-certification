@@ -224,9 +224,7 @@ This project is one of the **88 actively maintained** DeepSeek Harness entries f
 
 </details>
 
-</details>
 
-</details>
 
 ## License
 

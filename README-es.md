@@ -224,9 +224,7 @@ Este proyecto es una de las **88 entradas** de DeepSeek Harness mantenidas activ
 
 </details>
 
-</details>
 
-</details>
 
 ## Licencia
 

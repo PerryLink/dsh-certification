@@ -224,9 +224,7 @@ DSH adoption स्तर इस रिपॉज़िटरी से बाह
 
 </details>
 
-</details>
 
-</details>
 
 ## लाइसेंस
 

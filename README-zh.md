@@ -224,9 +224,7 @@ DSH 采用等级由本仓库之外的私有项目 `dsh-standards` 定义（撰�
 
 </details>
 
-</details>
 
-</details>
 
 ## 许可证
 
