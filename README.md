@@ -9,6 +9,10 @@ Community certification for DeepSeek Harness plugins: a public spec, a machine-c
 
 ## The five dimensions
 
+![dsh-certification: real terminal run](docs/assets/dsh-plugin-certification-demo.gif)
+
+*Animated replay of a real run recorded in this repository.*
+
 | Dimension | Evidence source | Checks |
 |---|---|---|
 | A. Manifest compliance | Static | `dsh.bundle` manifest, LICENSE (SPDX), keywords/topics alignment, five-language READMEs, engines |
