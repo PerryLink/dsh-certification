@@ -1,4 +1,15 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/dsh-certification-hero-en-dark.webp">
+  <img src="docs/assets/dsh-certification-hero-en-light.webp" width="100%" alt="dsh-certification: a five-dimension attestation registry — data/attestations.json records 1 attested repo (PerryLink/dsh-auto-review, grade A, snapshot 2026-11-01) across manifest, build hygiene, supply chain (Scorecard 4.1), release integrity and install smoke, and check-freshness.mjs asserts freshness, the dsh-cert-mcp mirror sha256 and both README markers">
+</picture>
+
 # dsh-certification
+
+[English](README.md) · [简体中文](README-zh.md) · [Español](README-es.md) · [Português](README-pt.md) · [हिन्दी](README-hi.md)
+
+</div>
 
 > **Renamed from `@perrylink/dsh-plugin-certification`.** This repository is now **`dsh-certification`**; the old scoped name is deprecated. Nothing is published to npm.
 [![dshfind](https://dshfind.com/api/badge/PerryLink/dsh-certification?metric=downloads)](https://dshfind.com/plugins/PerryLink/dsh-certification?ref=badge)
@@ -7,11 +18,18 @@ Community certification for DeepSeek Harness plugins: a public spec, a machine-c
 
 **This is a data repository, not a plugin.** It ships no Cordis plugin, nothing here is installable, and nothing is published to npm: `package.json` is `private` and exists only so ecosystem tooling can read the metadata (`dsh.manifestVersion`, `engines.dsh` — the same three-clause range that `dsh-plugin-kit/data/peer-range.json` records as canonical, quoted verbatim rather than re-typed).
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/dsh-certification-flow-v5-dark.svg">
+  <img src="docs/assets/dsh-certification-flow-v5-light.svg" width="100%" alt="Structure diagram for dsh-certification: five dimensions A–E (manifest, build hygiene, supply chain, release integrity, install smoke) feed data/attestations.json; scripts/check-freshness.mjs asserts freshness ≤ 30 days, the dsh-cert-mcp mirror sha256 and the README markers; scripts/badge.mjs renders badges/<owner>__<repo>.svg and .github/workflows/registry.yml re-renders them daily">
+</picture>
+
+*Structure: five dimensions → data/attestations.json → check-freshness gates → badges. Labels inside the diagram are real script names, paths and workflow files, so one picture serves all five languages.*
+
 ## The five dimensions
 
-![dsh-certification: real terminal run](docs/assets/dsh-plugin-certification-demo.gif)
+![dsh-certification: a real terminal run of node scripts/check-freshness.mjs — freshness ok (oldest generatedAt 2026-11-01, 20 days old, limit 30), mirror ok (sha256 bab74bc817b1b511… identical), roster-count 98 ok, attested-count 1 ok and the baseline-batch prose 98/87/8/3/1 ok, ending in check-freshness: ok](docs/assets/dsh-certification-demo.gif)
 
-*Animated replay of a real run recorded in this repository.*
+*Animated: node scripts/check-freshness.mjs re-run on 2026-11-21 with DSH_KIT_ROSTER pointing at the dsh-kit roster checkout — real stdout, no network calls.*
 
 | Dimension | Evidence source | Checks |
 |---|---|---|
