@@ -118,30 +118,27 @@ DSH 采用等级由本仓库之外的私有项目 `dsh-standards` 定义（撰�
 本项目是 [PerryLink](https://github.com/PerryLink) 维护的 **88 个积极维护**的 DeepSeek Harness 条目之一（87 个插件 + kit 的 infra 行）。家族名册共 **99** 条——**8 个冻结**、**3 个退役**——默认折叠在下方，让每份 README 都保持简短首屏。展开即可看到每一行，理由见「状态」列。
 
 <details>
-<summary>展开全部 95 个插件</summary>
+<summary>展开全部 99 个插件</summary>
 
 | 插件 | 一句话简介 | 状态 |
 |---|---|---|
 | **[dsh-aqua-input-check](https://github.com/PerryLink/dsh-aqua-input-check)** | 水产养殖投入品记录核对（按投入品用量、休药期与起捕间隔核对记录自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-archive-check](https://github.com/PerryLink/dsh-archive-check)** | 档案归档完整性与保管期限核对（依据《档案法》及配套规定，仅提示差异，不作出定性结论） |  |
 | **[dsh-auto-review](https://github.com/PerryLink/dsh-auto-review)** | 审批链上的第二模型自动审查，默认 fail-closed |  |
-| **[dsh-autotier](https://github.com/PerryLink/dsh-autotier)** | 强/廉价模型层级的自动路由，带确定性风险守卫与 `/tier` 命令 | 🧊 FROZEN — 见仓库 README |
-| **[dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)** | 持久的后台子 agent，带 Web UI 侧栏、消息传递与中断 | 🚫 RETIRED — 见仓库 README |
 | **[dsh-bid-ca-precheck](https://github.com/PerryLink/dsh-bid-ca-precheck)** | 投标文件符合性预检（按招标文件逐条核对响应情况，仅提示差异，不作出定性结论） |  |
 | **[dsh-bid-qual-check](https://github.com/PerryLink/dsh-bid-qual-check)** | 投标人资格条件核对（按资格条件与证明材料核对逐条响应，仅提示差异，不作出定性结论） |  |
-| **[dsh-budget](https://github.com/PerryLink/dsh-budget)** | DeepSeek Harness 的成本治理：预算、碳排与延迟集于一个面板。 | 🧊 FROZEN — 见仓库 README |
-| **[dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp)** | 只读 MCP 服务器，暴露认证注册表：等级、快照与五维证据 | 🧊 FROZEN — 见仓库 README |
+| **[dsh-check-pack](https://github.com/PerryLink/dsh-check-pack)** | 一条命令装齐 53 个 PerryLink 合规核查器（dsh-checkers 套件），并插入 53 条 Cordis 行；覆盖报关、招投标、EHS、医疗、法律、财务等场景。 |  |
 | **[dsh-checkpoint-rewind](https://github.com/PerryLink/dsh-checkpoint-rewind)** | 等价于 Claude Code /rewind：快照、会话分叉、一键恢复 |  |
-| **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** | 把 Claude Code 的会话、记忆、技能与 CLAUDE.md 迁移进 DSH | 🧊 FROZEN — 见仓库 README |
 | **[dsh-click](https://github.com/PerryLink/dsh-click)** | 面向 DeepSeek Harness 的跨平台原生桌面控制——Windows 优先。 |  |
+| **[dsh-clinic](https://github.com/PerryLink/dsh-clinic)** | DeepSeek Harness 插件零依赖检测器：包结构静态检查（R）、cordis 契约扫描（K）、无键无头沙箱冒烟（D）与生态清单校验（CC）四层。 |  |
+| **[dsh-codemod](https://github.com/PerryLink/dsh-codemod)** | 面向 DeepSeek Harness 插件作者的新一代单包升级技能：一份走廊索引读取调用方 peer 区间并路由到对应已封版升级卡片（dsh 0.1.3-alpha.1 → 0.1.5-rc.1 与 0.1.5-rc.2 → 0.1.6-alpha.2），零依赖接缝扫描器以 bundle 技能与 npx CLI 两种形态提供。 |  |
 | **[dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)** | Web 输入框的终端式输入历史：方向键、Ctrl+R 搜索 |  |
 | **[dsh-contract-stance](https://github.com/PerryLink/dsh-contract-stance)** | 合同条款立场台账核对（按立场、风险等级与退让底线核对台账自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-customs-doc-check](https://github.com/PerryLink/dsh-customs-doc-check)** | 报关单证一致性核对（按公开的报关单填制规范核对单证间字段一致性，仅提示差异，不作出定性结论） |  |
 | **[dsh-data-quality](https://github.com/PerryLink/dsh-data-quality)** | 数据集质量检查与引用交叉核对（此处消费的可选数值桥） |  |
-| **[dsh-defend](https://github.com/PerryLink/dsh-defend)** | 面向 DeepSeek Harness 的提示注入、越狱与密钥泄露防护。 | 🧊 FROZEN — 见仓库 README |
 | **[dsh-demurrage-ledger](https://github.com/PerryLink/dsh-demurrage-ledger)** | 滞箱费台账核对（按免箱期与费率核对超期天数与金额的自洽性，仅提示差异，不作出定性结论） |  |
+| **[dsh-dida](https://github.com/PerryLink/dsh-dida)** | TickTick（滴答清单）任务桥：会话顶部任务面板（列表筛选、快速添加、完成、删除、截止日期、拖动排序）、十一个 ticktick_* 工具，以及基于官方 TickTick MCP 端点的插件设置卡。 |  |
 | **[dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck)** | 工程纪律守卫：需求质询、测试门禁、对抗式评审 |  |
-| **[dsh-draw](https://github.com/PerryLink/dsh-draw)** | 面向 DeepSeek Harness 的统一静态图像生成路由。 | 🧊 FROZEN — 见仓库 README |
 | **[dsh-drill-script-check](https://github.com/PerryLink/dsh-drill-script-check)** | 应急演练脚本核对（按阶段、响应分级、指挥与资源要素核对脚本齐备，仅提示差异，不作出定性结论） |  |
 | **[dsh-eia-guide-check](https://github.com/PerryLink/dsh-eia-guide-check)** | 环评导则适用性核对（按要素、导则名称与执行标准核对台账自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-emergency-plan](https://github.com/PerryLink/dsh-emergency-plan)** | 应急预案要素齐备性与条款级页码定位（依据 GB/T 29639-2020 等公开文件，仅提示差异，不作出定性结论） |  |
@@ -152,7 +149,7 @@ DSH 采用等级由本仓库之外的私有项目 `dsh-standards` 定义（撰�
 | **[dsh-fmea-table-check](https://github.com/PerryLink/dsh-fmea-table-check)** | FMEA 分析表要素齐备性与风险顺序数一致性核对（按公开的 FMEA 方法标准核对表内自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-forecast-penalty](https://github.com/PerryLink/dsh-forecast-penalty)** | 预测准确率考核核对（按准确率、门槛与考核单价核对考核费用的算术自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-fund-research](https://github.com/PerryLink/dsh-fund-research)** | 面向中国公募基金的确定性研究报告 |  |
-| **[dsh-github](https://github.com/PerryLink/dsh-github)** | DSH 的 GitHub PR/issue 集成，每次写入都经审批门禁 |  |
+| **[dsh-github-bot](https://github.com/PerryLink/dsh-github-bot)** | GitHub 集成：PR/issue/仓库/文件工具、评审与 CI 检查，每次写入都需人工审批，token 从不进日志。 |  |
 | **[dsh-gongwen-flow-check](https://github.com/PerryLink/dsh-gongwen-flow-check)** | 公文流转与办理时限核对（按公开的公文处理规范核对环节完整性与时限，仅提示差异，不作出定性结论） |  |
 | **[dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check)** | 公文格式要素核对（按公开的党政机关公文格式标准核对版头与主体要素，仅提示差异，不作出定性结论） |  |
 | **[dsh-guard-plan-qc](https://github.com/PerryLink/dsh-guard-plan-qc)** | 劳动保护与安全防护用品配置表核对（按公开的配备标准核对品名规格与配置数量，仅提示差异，不作出定性结论） |  |
@@ -180,43 +177,50 @@ DSH 采用等级由本仓库之外的私有项目 `dsh-standards` 定义（撰�
 | **[dsh-ota-review-check](https://github.com/PerryLink/dsh-ota-review-check)** | 在线点评回复台账核对（按回复时限、问题分类与整改状态核对台账闭环，仅提示差异，不作出定性结论） |  |
 | **[dsh-output-styles](https://github.com/PerryLink/dsh-output-styles)** | 等价于 Claude Code outputStyles 的运行时风格切换 |  |
 | **[dsh-paper-doc-adapter](https://github.com/PerryLink/dsh-paper-doc-adapter)** | 试卷解析结构核对（按题型、答案、分值与 yotta 标识核对试卷结构自洽，仅提示差异，不作出定性结论） |  |
+| **[dsh-param-repair](https://github.com/PerryLink/dsh-param-repair)** | 在 11 家厂商之间映射请求参数，并按固定、可审计的规则修复坏掉的 JSON 工具输出；不联网、不调模型、不编造数据。 |  |
 | **[dsh-permission-rules](https://github.com/PerryLink/dsh-permission-rules)** | Claude Code 风格的声明式 allow/deny/ask 权限规则，带审计 |  |
 | **[dsh-permit-report-check](https://github.com/PerryLink/dsh-permit-report-check)** | 行政许可办理核对（按申请材料、法定时限与决定记录核对台账闭环，仅提示差异，不作出定性结论） |  |
+| **[dsh-phocinae](https://github.com/PerryLink/dsh-phocinae)** | 本地的非生成式决策层：phocinae_ask / phocinae_gate 两个工具，外加一个失效即拒的审批闸门。 |  |
+| **[dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox)** | 会话的手机（微信桥）入站附件收件箱：列出本会话实际收到的附件，并按需采纳到工作区。 |  |
 | **[dsh-pipeline-check](https://github.com/PerryLink/dsh-pipeline-check)** | 项目全流程文件链条核对（按环节先后与金额口径核对链条自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-pleading-draft](https://github.com/PerryLink/dsh-pleading-draft)** | 起诉状要素齐备性核对（按诉请、事实、证据、法条四要素核对文书齐备，仅提示差异，不作出定性结论） |  |
-| **[dsh-plugin-doctor](https://github.com/PerryLink/dsh-plugin-doctor)** | 面向 DSH 插件的零依赖静态 + 沙箱冒烟检测器 |  |
-| **[dsh-plugin-guide](https://github.com/PerryLink/dsh-plugin-guide)** | 作为按需 agent 技能的插件开发知识库 |  |
-| **[dsh-plugin-kit](https://github.com/PerryLink/dsh-plugin-kit)** | PerryLink DSH 插件的共享零运行时依赖工具包 |  |
-| **[dsh-plugin-upgrade](https://github.com/PerryLink/dsh-plugin-upgrade)** | 一包一走廊索引的插件升级技能：把仓库路由到匹配的封闭走廊卡片 |  |
 | **[dsh-policy-brief-draft](https://github.com/PerryLink/dsh-policy-brief-draft)** | 政策专报要素核对（按观点、依据、出处与建议核对专报齐备，仅提示差异，不作出定性结论） |  |
 | **[dsh-power-loss-split](https://github.com/PerryLink/dsh-power-loss-split)** | 线损电量拆分与考核表核对（依据公开的线损计算口径，仅提示差异，不作出定性结论） |  |
 | **[dsh-power-ticket-check](https://github.com/PerryLink/dsh-power-ticket-check)** | 电力工作票要素齐备性与签发许可顺序核对（依据现行电力安全工作规程，仅提示差异，不作出定性结论） |  |
 | **[dsh-ppap-check](https://github.com/PerryLink/dsh-ppap-check)** | PPAP 提交要素齐备性核对（按公开的 PPAP 手册与提交等级核对要素齐备与版本填写，仅提示差异，不作出定性结论） |  |
+| **[dsh-primer](https://github.com/PerryLink/dsh-primer)** | 把 DSH 插件开发指南做成可安装技能：打包、契约、检查，以及构建用的包校验器。 |  |
 | **[dsh-protest-deadline](https://github.com/PerryLink/dsh-protest-deadline)** | 质疑与投诉期限核对（按公开的政府采购质疑投诉规定核对期限与台账自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-railway-window](https://github.com/PerryLink/dsh-railway-window)** | 铁路施工天窗台账核对（按时间窗、时长算术与命令号核对台账自洽，仅提示差异，不作出定性结论） |  |
-| **[dsh-reach](https://github.com/PerryLink/dsh-reach)** | 多渠道审批/提问桥：微信/Telegram/飞书，会话控制台 | 🧊 FROZEN — 见仓库 README |
 | **[dsh-repair-order-qc](https://github.com/PerryLink/dsh-repair-order-qc)** | 维修工单结算核对（按项目金额、配件工时合计与结算总额核对算术自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-research-report](https://github.com/PerryLink/dsh-research-report)** | 可验证的研究报告引擎：内容寻址证据台账与封存版本 |  |
 | **[dsh-review-reply-check](https://github.com/PerryLink/dsh-review-reply-check)** | 审稿意见逐条回应覆盖核对（按意见与回应一一对应核对覆盖完整性，仅提示差异，不作出定性结论） |  |
 | **[dsh-rulefile-check](https://github.com/PerryLink/dsh-rulefile-check)** | 规则库文件自检核对（按条款引用纪律与效力上限核对规则库自身合规，仅提示差异，不作出定性结论） |  |
 | **[dsh-safety-brief-check](https://github.com/PerryLink/dsh-safety-brief-check)** | 安全技术交底记录要素齐备性与签字闭环核对（依据公开的安全生产法规与检查标准，仅提示差异，不作出定性结论） |  |
+| **[dsh-scaffold](https://github.com/PerryLink/dsh-scaffold)** | PerryLink DSH 插件共享零运行时依赖工具包：可插拔 Provider 注册表接缝、失效即拒的审批门与自适应会话事件门、机械校验脚本、共享的脱敏/计价/裁决模块，以及新插件骨架。 |  |
 | **[dsh-score](https://github.com/PerryLink/dsh-score)** | 面向 DeepSeek Harness 插件的多维质量评分。 |  |
-| **[dsh-session-pin](https://github.com/PerryLink/dsh-session-pin)** | 在 Web 侧栏固定会话，并保持持久排序 | 🚫 RETIRED — 见仓库 README |
+| **[dsh-security-pack](https://github.com/PerryLink/dsh-security-pack)** | 安全技能包 provider：预置带风险卡的安全评审技能，同时提供宿主侧与客户端侧两个面。 |  |
 | **[dsh-session-sync](https://github.com/PerryLink/dsh-session-sync)** | 面向 DeepSeek Harness 的跨设备会话同步——会话存储的专用 git 镜像。 |  |
 | **[dsh-site-log-check](https://github.com/PerryLink/dsh-site-log-check)** | 监理日志跨日连续性与旁站覆盖提示（依据 GB/T 50319-2013 等公开文件，仅提示差异，不作出定性结论） |  |
-| **[dsh-skill-pack-security](https://github.com/PerryLink/dsh-skill-pack-security)** | 安全审计技能包：密钥扫描、依赖与供应链审查 |  |
 | **[dsh-soe-decision-check](https://github.com/PerryLink/dsh-soe-decision-check)** | 三重一大决策台账核对（按前置研究、会议审议与决议记录核对程序留痕，仅提示差异，不作出定性结论） |  |
 | **[dsh-soilwater-check](https://github.com/PerryLink/dsh-soilwater-check)** | 土壤与地下水监测台账核对（按点位、监测项目、限值与超标判定核对台账自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-sop-sync-check](https://github.com/PerryLink/dsh-sop-sync-check)** | 作业规程与 FMEA／控制计划一致性核对（按编号与版本核对三份文件是否同步，仅提示差异，不作出定性结论） |  |
 | **[dsh-spc-gbt-adapter](https://github.com/PerryLink/dsh-spc-gbt-adapter)** | 控制图常数与过程能力指数核对（按 GB/T 4091 的常规控制图常数表核对控制限与 Cp/Cpk 的自洽性，仅提示差异，不作出定性结论） |  |
 | **[dsh-talk](https://github.com/PerryLink/dsh-talk)** | 面向 DeepSeek Harness 的语音优先会话环：对它说话，听它回答。 |  |
-| **[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms)** | 跨会话团队房间：共享消息总线、任务板与时间线 | 🚫 RETIRED — 见仓库 README |
 | **[dsh-tender-extract](https://github.com/PerryLink/dsh-tender-extract)** | 招标文件条款摘录核对（按出处与原文逐字核对摘录完整性，仅提示差异，不作出定性结论） |  |
 | **[dsh-tender-matrix](https://github.com/PerryLink/dsh-tender-matrix)** | 评标因素评分矩阵核对（按分值上限与合计核对矩阵自洽，仅提示差异，不作出定性结论） |  |
 | **[dsh-test-drive](https://github.com/PerryLink/dsh-test-drive)** | 面向 DeepSeek Harness 插件的隔离安装与冒烟试驾。 |  |
-| **[dsh-ticktick](https://github.com/PerryLink/dsh-ticktick)** | TickTick/滴答清单任务桥：会话头部面板 + 11 个工具 |  |
-| **[dsh-translate](https://github.com/PerryLink/dsh-translate)** | 面向 DeepSeek Harness 的供应商参数翻译与确定性 JSON 修复。 |  |
 | **[dsh-warranty-calc](https://github.com/PerryLink/dsh-warranty-calc)** | 质保期与索赔金额核对（按质保期月数与里程、索赔金额算式核对自洽，仅提示差异，不作出定性结论） |  |
+| **[dsh-autotier](https://github.com/PerryLink/dsh-autotier)** | 强/廉价模型层级的自动路由，带确定性风险守卫与 `/tier` 命令 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-budget](https://github.com/PerryLink/dsh-budget)** | DeepSeek Harness 的成本治理：预算、碳排与延迟集于一个面板。 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-cert-mcp](https://github.com/PerryLink/dsh-cert-mcp)** | 只读 MCP 服务器，暴露认证注册表：等级、快照与五维证据 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** | 把 Claude Code 的会话、记忆、技能与 CLAUDE.md 迁移进 DSH | 🧊 已冻结 — 见仓库 README |
+| **[dsh-community-bench](https://github.com/PerryLink/dsh-community-bench)** | DSH 应用内社区基准标签页：读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地算分。 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-defend](https://github.com/PerryLink/dsh-defend)** | 面向 DeepSeek Harness 的提示注入、越狱与密钥泄露防护。 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-draw](https://github.com/PerryLink/dsh-draw)** | 面向 DeepSeek Harness 的统一静态图像生成路由。 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-reach](https://github.com/PerryLink/dsh-reach)** | 多渠道审批/提问桥：微信/Telegram/飞书，会话控制台 | 🧊 已冻结 — 见仓库 README |
+| **[dsh-background-agents](https://github.com/PerryLink/dsh-background-agents)** | 持久的后台子 agent，带 Web UI 侧栏、消息传递与中断 | 🚫 已退役 — 见仓库 README |
+| **[dsh-session-pin](https://github.com/PerryLink/dsh-session-pin)** | 在 Web 侧栏固定会话，并保持持久排序 | 🚫 已退役 — 见仓库 README |
+| **[dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms)** | 跨会话团队房间：共享消息总线、任务板与时间线 | 🚫 已退役 — 见仓库 README |
 
 </details>
 
